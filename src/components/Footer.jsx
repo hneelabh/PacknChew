@@ -2,6 +2,7 @@ import React from "react";
 import { BsFacebook } from "react-icons/bs";
 import { RiTwitterXFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
+import { GrLocation } from "react-icons/gr";
 
 const Footer = () => {
   return (
@@ -11,6 +12,11 @@ const Footer = () => {
           <h1 className=" font-semibold text-xl pb-4">Pack n Chew</h1>
           <p className=" text-sm">
             Serving you right, since 1999
+          </p>
+          <p className="flex text-sm mt-4">
+            <div className="mt-1"> <GrLocation/> </div>
+            
+            Lucknow, Uttar Pradesh
           </p>
         </div>
         <div>
@@ -74,12 +80,33 @@ const Footer = () => {
             >
               +91 9876543210
             </a>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Social media
-            </a>
+  
+            <div className="flex flex-rowjustify-center gap-4">
+      <a
+        className="hover:text-brightColor transition-all cursor-pointer"
+        href="https://www.instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <BsInstagram size={24} />
+      </a>
+      <a
+        className="hover:text-brightColor transition-all cursor-pointer"
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <BsFacebook size={24} />
+      </a>
+      <a
+        className="hover:text-brightColor transition-all cursor-pointer"
+        href="https://www.twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <RiTwitterXFill size={24} />
+      </a>
+    </div>
           </nav>
         </div>
       </div>
