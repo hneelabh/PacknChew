@@ -24,7 +24,7 @@ const Navbar = () => {
             {/* <h1 className=" text-xl mr-6 font-semibold">PACKnCHEW</h1> */}
           </div>
 
-          <nav className="hidden md:flex flex-row text-white items-center text-lg font-medium gap-8">
+          <nav className="hidden md:flex flex-row text-[#E2C151] items-center text-lg font-medium gap-8">
             <Link
               to="home"
               spy={true}

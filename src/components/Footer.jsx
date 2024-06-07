@@ -6,7 +6,7 @@ import { GrLocation } from "react-icons/gr";
 
 const Footer = () => {
   return (
-    <div className=" bg-zinc-900 text-white mt-8 md:mt-0">
+    <div className=" bg-zinc-900 text-[#E2C151] mt-8 md:mt-0">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className=" w-full md:w-1/4">
           <h1 className=" font-semibold text-xl pb-4">Pack n Chew</h1>
@@ -15,8 +15,8 @@ const Footer = () => {
           </p>
           <p className="flex text-sm mt-4">
             <div className="mt-1"> <GrLocation/> </div>
-            
-            Lucknow, Uttar Pradesh
+            2/30, Vijay Khand Road, Near Mithaiwala Crossing <br />
+            Gomti Nagar, Lucknow - 226010
           </p>
         </div>
         <div>

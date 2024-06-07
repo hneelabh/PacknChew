@@ -15,7 +15,7 @@ const Home = () => {
 
         {/* <h1 className=" text-backgroundColor font-semibold text-6xl">
         PACK n CHEW        </h1> */}
-        <p className=" text-backgroundColor lg:pl-44 pt-10 pl-5 text-lg md:text-xl lg:text-xl">
+        <p className=" text-[#E2C151] lg:pl-44 pt-10 pl-5 text-lg md:text-xl lg:text-xl">
         The perfect place for Music | Food | Drinks | Family | Home
         </p>
         <div className=" lg:pl-44 pl-5">
