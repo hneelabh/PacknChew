@@ -12,6 +12,7 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import Reviews from "./components/Review";
 import Review from "./components/Review";
+import Reservation from "./components/Reservation";
 
 const App = () => {
 
@@ -41,8 +42,14 @@ const App = () => {
           <Home/>
           <Services/>
           <Footer />
-
         </>} />
+
+        <Route path="/reserve" element={<>
+          <Navbar/>
+          <Reservation />
+          <Footer />
+        </>} />
+
       </Routes>
 
     </div>
