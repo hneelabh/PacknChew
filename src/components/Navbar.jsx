@@ -25,15 +25,13 @@ const Navbar = () => {
           </div>
 
           <nav className="hidden md:flex flex-row text-[#E2C151] items-center text-lg font-medium gap-8">
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <RouterLink
+              to="/"
+              onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Home
-            </Link>
+            </RouterLink>
 
             <Link
               to="home"
@@ -45,8 +43,10 @@ const Navbar = () => {
               Services
             </Link>
 
+
+
             <RouterLink
-              to="/"
+              to="/about"
               onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >

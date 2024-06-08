@@ -5,11 +5,12 @@ import 'aos/dist/aos.css';
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import Services from "./components/Services";
-
-import About from "./components/About";
-import Menu from "./components/Menu";
 import Footer from "./components/Footer";
+import Services from "./components/Services";
+import WhyChooseUs from "./components/WhyChooseUs";
+import ChefsNote from "./components/ChefsNote";
+
+import Menu from "./components/Menu";
 import Reviews from "./components/Review";
 import Review from "./components/Review";
 import Reservation from "./components/Reservation";
@@ -47,6 +48,14 @@ const App = () => {
         <Route path="/reserve" element={<>
           <Navbar/>
           <Reservation />
+          <Footer />
+        </>} />
+
+
+        <Route path="/about" element={<>
+          <Navbar/>
+          <ChefsNote />
+          <WhyChooseUs />
           <Footer />
         </>} />
 
