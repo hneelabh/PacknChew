@@ -14,6 +14,7 @@ import Menu from "./components/Menu";
 import Reviews from "./components/Review";
 import Review from "./components/Review";
 import Reservation from "./components/Reservation";
+import Awards from "./components/Awards";
 
 const App = () => {
 
@@ -55,6 +56,7 @@ const App = () => {
         <Route path="/about" element={<>
           <Navbar/>
           <ChefsNote />
+          <Awards />
           <WhyChooseUs />
           <Footer />
         </>} />

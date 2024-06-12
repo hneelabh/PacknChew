@@ -15,7 +15,7 @@ const ChefsNote = () => {
             <br />
             <br />
             <b>
-              <i>Bon Appetit `</i>
+              <i>Bon Appétit </i>
             </b>
             <br />
             <br />

@@ -4,7 +4,7 @@ import Button from "../layouts/Button";
 
 const WhyChooseUs = () => {
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center bg-gradient-to-r from-black to-slate-950 lg:px-32 px-5 py-8">
+    <div className="min-h-screen flex flex-col lg:flex-row justify-center items-center bg-gradient-to-r from-slate-950 to-black lg:px-32 px-5 py-8">
       <div className="w-full max-w-md mb-8 lg:mb-0 lg:mr-8">
         <img src={img} alt="img" className="rounded-lg shadow-lg" />
       </div>
