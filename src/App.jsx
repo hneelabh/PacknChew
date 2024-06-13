@@ -84,12 +84,9 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import ChefsNote from "./components/ChefsNote";
 import Awards from "./components/Awards";
 import Location from "./components/Location";
-
-import Menu from "./components/Menu";
-import Reviews from "./components/Review";
-import Review from "./components/Review";
 import Reservation from "./components/Reservation";
 import GetinTouch from "./components/GetinTouch";
+import DineinMenu from "./components/DineinMenu.jsx";
 
 const App = () => {
 
@@ -144,6 +141,15 @@ const App = () => {
               <Footer />
             </>
           } />
+
+          <Route path="/menu" element={
+            <>
+              <Navbar />
+              <DineinMenu/>
+              <Footer />
+            </>
+          } />
+
         </Routes>
       </div>
     </Router>
