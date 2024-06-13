@@ -18,23 +18,19 @@ const Navbar = () => {
     <div className=" fixed w-full">
       <div>
         <div className=" flex flex-row justify-between p-5 md:px-32 px-5 bg-zinc-900 txt-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-          <div className=" flex flex-row items-center cursor-pointer">
-
-            <img className="logo w-[200px] " src={logo} alt="logo" />
-            {/* <h1 className=" text-xl mr-6 font-semibold">PACKnCHEW</h1> */}
-          </div>
-
-          <nav className="hidden md:flex flex-row text-[#E2C151] items-center text-lg font-medium gap-8">
-            <RouterLink
+          <RouterLink
               to="/"
               onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Home
-            </RouterLink>
+            <div className=" flex flex-row items-center cursor-pointer">
+              <img className="logo w-[200px] " src={logo} alt="logo" />
+            </div>
+          </RouterLink>
 
+          <nav className="hidden md:flex flex-row text-[#E2C151] items-center text-lg font-medium gap-8">
             <Link
-              to="home"
+              to="services"
               spy={true}
               smooth={true}
               duration={500}
@@ -42,8 +38,6 @@ const Navbar = () => {
             >
               Services
             </Link>
-
-
 
             <RouterLink
               to="/about"
@@ -54,22 +48,20 @@ const Navbar = () => {
             </RouterLink>
 
             <RouterLink
-              to="/"
+              to="/contact"
               onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Contact Us
             </RouterLink>
 
-            <Link
-              to="menu"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <RouterLink
+              to="/menu"
+              onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Dine-in Menu
-            </Link>
+            </RouterLink>
 
             <Button title="Login" />
           </nav>
@@ -89,17 +81,7 @@ const Navbar = () => {
           } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
             <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="hover:text-brightColor transition-all cursor-pointer"
-            >
-              Home
-            </Link>
-
-            <Link
-              to="home"
+              to="services"
               spy={true}
               smooth={true}
               duration={500}
@@ -109,7 +91,7 @@ const Navbar = () => {
             </Link>
 
             <RouterLink
-              to="/"
+              to="/about"
               onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
@@ -117,22 +99,20 @@ const Navbar = () => {
             </RouterLink>
 
             <RouterLink
-              to="/"
+              to="/contact"
               onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Contact Us
             </RouterLink>
 
-            <Link
-              to="menu"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <RouterLink
+              to="/menu"
+              onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Dine-in Menu
-            </Link>
+            </RouterLink>
 
             <Button title="Login" />        </div>
       </div>

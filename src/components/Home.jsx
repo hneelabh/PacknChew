@@ -20,7 +20,7 @@ const Home = () => {
         </p>
         <div className=" lg:pl-44 pl-5">
           <RouterLink
-              to="/"
+              to="/order"
               onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >

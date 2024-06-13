@@ -75,20 +75,21 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Im
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import ChefsNote from "./components/ChefsNote";
+import Awards from "./components/Awards";
+import Location from "./components/Location";
 
 import Menu from "./components/Menu";
 import Reviews from "./components/Review";
 import Review from "./components/Review";
 import Reservation from "./components/Reservation";
-import Awards from "./components/Awards";
-
-import ScrollToTop from './components/ScrollToTop'; // Import the ScrollToTop component
+import GetinTouch from "./components/GetinTouch";
 
 const App = () => {
 
@@ -105,7 +106,7 @@ const App = () => {
 
   return (
     <Router>
-      <ScrollToTop /> {/* Include ScrollToTop component here */}
+      <ScrollToTop />
       <div>
         <Routes>
           <Route path="/" element={
@@ -131,6 +132,15 @@ const App = () => {
               <ChefsNote />
               <Awards />
               <WhyChooseUs />
+              <Footer />
+            </>
+          } />
+
+          <Route path="/contact" element={
+            <>
+              <Navbar />
+              <Location/>
+              <GetinTouch />
               <Footer />
             </>
           } />
