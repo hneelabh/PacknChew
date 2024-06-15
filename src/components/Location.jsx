@@ -9,18 +9,18 @@ const Location = () => {
           <div className="text-center mb-4">
             <h1 className="text-2xl font-bold mb-2 border-b-4 border-[#E2C151] inline-block">Location & Hours</h1>
           </div>
-          <p className="text-justify mb-4">
+          <div className="text-justify mb-4">
             Pack N Chew, the boutique restaurant serving a customized experience since 1999. We offer a variety of cuisines including Indian, Chinese and Continental dishes. Visit us at our location in Lucknow to enjoy an experience like no other and also our food.
             <br />
             <br />
-            <p className="flex text-sm mt-4">
+            <div className="flex text-sm mt-4">
             <div className="mt-1"> <GrLocation/> </div>
             2/30, Vijay Khand Road, Near Mithaiwala Crossing <br />
             Gomti Nagar, Lucknow - 226010
-          </p>
+          </div>
             <br />
             Open all days 11am to 10:45pm.
-          </p>
+          </div>
         </div>
         <div className="w-full max-w-md lg:ml-8">
           <iframe
