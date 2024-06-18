@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
         <img src={img} alt="img" className="rounded-lg shadow-lg" />
       </div>
       <div className="bg-black text-white p-8 rounded-lg shadow-lg max-w-md space-y-4 lg:pt-14">
-        <h1 className="font-semibold text-4xl text-center lg:text-left">Why Choose Us?</h1>
+        <h1 className="font-bold text-2xl  mb-2 border-b-4 border-[#E2C151] inline-block text-center lg:text-left">Why Choose Us?</h1>
         <p className="text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto quisquam delectus minima perferendis nulla quia nisi laborum, exercitationem cum quo accusantium, impedit sed. Dicta, quo molestias omnis reprehenderit quae animi? Explicabo quasi accusamus laboriosam temporibus delectus, aut a? Quasi?
         </p>

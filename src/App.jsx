@@ -123,6 +123,14 @@ const App = () => {
             </>
           } />
 
+          <Route path="/services" element={
+            <>
+              <Navbar />
+              <Services />
+              <Footer />
+            </>
+          } />
+
           <Route path="/about" element={
             <>
               <Navbar />

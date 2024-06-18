@@ -29,15 +29,12 @@ const Navbar = () => {
           </RouterLink>
 
           <nav className="hidden md:flex flex-row text-[#E2C151] items-center text-lg font-medium gap-8">
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <RouterLink
+              to="/services"
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Services
-            </Link>
+            </RouterLink>
 
             <RouterLink
               to="/about"
@@ -80,15 +77,13 @@ const Navbar = () => {
             menu ? "translate-x-0" : "-translate-x-full"
           } lg:hidden flex flex-col absolute bg-black text-white left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
+            <RouterLink
+              to="/services"
+              onClick={closeMenu}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
               Services
-            </Link>
+            </RouterLink>
 
             <RouterLink
               to="/about"
@@ -114,7 +109,8 @@ const Navbar = () => {
               Dine-in Menu
             </RouterLink>
 
-            <Button title="Login" />        </div>
+            <Button title="Login" />        
+        </div>
       </div>
     </div>
   );

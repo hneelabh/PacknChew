@@ -7,7 +7,7 @@ import DishesCard from "../layouts/DishesCard";
 const Services = () => {
   return (
     <div name="services" className="bg-gradient-to-r from-slate-950 to-black text-[#E2C151] min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
-      <h1 className=" text-4xl font-semibold text-center pt-24 pb-10">
+      <h1 className=" text-4xl font-semibold text-center pt-24 mb-10  border-b-4 border-[#E2C151] inline-block">
         Our Services
       </h1>
 

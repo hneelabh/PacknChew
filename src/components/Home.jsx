@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Button from "../layouts/Button";
 import logo from '../assets/logo.png'
-import { Link as RouterLink } from 'react-router-dom';
+import { Link } from "react-scroll";
 
 
 const Home = () => {
-  const [menu, setMenu] = useState(false);
-  const closeMenu = () => setMenu(false);
 
   return (
     <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat ">
@@ -19,13 +17,14 @@ const Home = () => {
         The perfect place for Music | Food | Drinks | Family | Home
         </p>
         <div className=" lg:pl-44 pl-5">
-          <RouterLink
-              to="/order"
-              onClick={closeMenu}
+          <Link
+              to="services"
+              smooth={true}
+              duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-            <Button title="Order Now" />
-            </RouterLink>
+            <Button title="Dining Options" />
+            </Link>
         </div>
       </div>
     </div>

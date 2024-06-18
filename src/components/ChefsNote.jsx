@@ -7,7 +7,7 @@ const ChefsNote = () => {
       <div className="container mx-auto px-5 lg:px-32 flex flex-col lg:flex-row items-center gap-8">
         <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full lg:max-w-2xl space-y-4">
           <div className="text-center mb-4">
-            <h1 className="text-2xl font-bold mb-2">CHEF&apos;S NOTE</h1>
+            <h1 className="text-2xl border-b-4 border-[#E2C151] inline-block font-bold mb-2">CHEF&apos;S NOTE</h1>
             <p className="italic">The only thing we&apos;re serious about is food.</p>
           </div>
           <p className="text-justify mb-4">

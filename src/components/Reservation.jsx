@@ -128,10 +128,10 @@ const Reservation = () => {
                 onChange={(e) => setTableType(e.target.value)}
                 className="border rounded p-2 w-full"
               >
-                <option value="premium">Premium Table</option>
+                {/* <option value="premium">Premium Table</option> */}
                 <option value="simple">Simple Table</option>
                 <option value="outdoor">Outdoor Table</option>
-                <option value="private">Private Table</option>
+                {/* <option value="private">Private Table</option> */}
               </select>
             </div>
             <button

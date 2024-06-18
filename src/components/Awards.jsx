@@ -8,7 +8,7 @@ const Awards = () => {
       <div className="container mx-auto px-5 lg:px-32 flex flex-col items-center gap-8">
         <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full lg:max-w-4xl space-y-8">
           <div className="text-center mb-4">
-            <h1 className="text-2xl font-bold mb-2">AWARDS & RECOGNITION</h1>
+            <h1 className="text-2xl font-bold mb-2 border-b-4 border-[#E2C151] inline-block">AWARDS & RECOGNITION</h1>
             <p className="italic">Celebrating excellence and culinary mastery.</p>
           </div>
           
