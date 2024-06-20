@@ -124,7 +124,7 @@ import { GrLocation } from "react-icons/gr";
 
 const Footer = () => {
   return (
-    <div className="bg-zinc-900 text-[#E2C151] mt-8 md:mt-0">
+    <div className="bg-zinc-900 text-[#E2C151] pt-8">
       <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
         <div className="w-full md:w-1/4">
           <h1 className="font-semibold text-xl pb-4">Pack n Chew</h1>
@@ -140,44 +140,38 @@ const Footer = () => {
           <nav className="flex flex-col gap-2">
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="/dinein"
             >
-              Dishes
+              Dine-in
             </a>
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="/reserve"
+            >
+              Reserve a Table
+            </a>
+            <a
+              className="hover:text-brightColor transition-all cursor-pointer"
+              href="/order"
+            >
+              Order Online
+            </a>
+          </nav>
+        </div>
+        <div>
+          <h1 className="font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
+          <nav className="flex flex-col gap-2">
+            <a
+              className="hover:text-brightColor transition-all cursor-pointer"
+              href="/about"
             >
               About
             </a>
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="/menu"
             >
               Menu
-            </a>
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Reviews
-            </a>
-          </nav>
-        </div>
-        <div>
-          <h1 className="font-medium text-xl pb-4 pt-5 md:pt-0">Menu</h1>
-          <nav className="flex flex-col gap-2">
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Our Dishes
-            </a>
-            <a
-              className="hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Premium Menu
             </a>
           </nav>
         </div>
@@ -192,7 +186,7 @@ const Footer = () => {
             </a>
             <a
               className="hover:text-brightColor transition-all cursor-pointer"
-              href="/"
+              href="tel:+91 9876543210"
             >
               +91 9876543210
             </a>

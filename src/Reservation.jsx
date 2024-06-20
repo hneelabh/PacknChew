@@ -75,15 +75,15 @@ const Reservation = () => {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-r from-zinc-800 to-zinc-900">
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div>
-          <img src={schedule} alt="Schedule" className="rounded-lg max-sm:hidden w-full max-w-md" />
+          <img src={schedule} alt="Schedule" className="w-full max-w-md" />
         </div>
-        <div className="bg-black p-8 rounded-lg shadow-lg max-w-md">
-          <h1 className="text-2xl text-[#E2C151] font-bold mb-2 text-center">
+        <div className="bg-black text-[#E2C151] p-8 rounded-lg shadow-lg max-w-md">
+          <h1 className="text-2xl font-bold mb-2 text-center">
             MAKE A RESERVATION
           </h1>
-          <p className="text-center text-[#E2C151] mb-4">For Further Questions, Please <a href="tel:+91 9876543210"> <u> Call </u></a></p>
+          <p className="text-center mb-4">For Further Questions, Please Call</p>
           <form>
-            <div className="grid grid-cols-1 text-gray-800  md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"
                 placeholder="First Name"
@@ -100,7 +100,7 @@ const Reservation = () => {
                 className="border rounded p-2"
               />
             </div>
-            <div className="grid grid-cols-1 text-gray-700 md:grid-cols-2 gap-4 my-4">
+            <div className="grid grid-cols-1 text-gray-400 md:grid-cols-2 gap-4 my-4">
               <input
                 type="date"
                 placeholder="Date"
@@ -133,7 +133,7 @@ const Reservation = () => {
                 className="border rounded p-2"
               />
             </div>
-            <div className="mb-4  text-gray-700">
+            <div className="mb-4  text-gray-400">
               <label htmlFor="Table Type" className="block mb-2">
                 Select Table Type:
               </label>
@@ -144,7 +144,7 @@ const Reservation = () => {
                 className="border rounded p-2 w-full"
               >
                 {/* <option value="premium">Premium Table</option> */}
-                <option value="simple">Indoor Table</option>
+                <option value="simple">Simple Table</option>
                 <option value="outdoor">Outdoor Table</option>
                 {/* <option value="private">Private Table</option> */}
               </select>

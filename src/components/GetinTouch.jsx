@@ -2,7 +2,7 @@ import React from 'react';
 
 const GetinTouch = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r from-black to-slate-950 py-8 pt-24">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-r from-black to-slate-950 pb-8 pt-8">
       <div className="container mx-auto px-5 lg:px-48 flex flex-col items-center">
         <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full max-w-2xl space-y-4">
           <div className="text-center mb-4">

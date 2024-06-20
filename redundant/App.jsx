@@ -28,6 +28,7 @@
 //     });
 //     AOS.refresh();
 //   }, []);
+  
 
 //   return (
 
@@ -51,6 +52,7 @@
 //           <Footer />
 //         </>} />
 
+
 //         <Route path="/about" element={<>
 //           <Navbar/>
 //           <ChefsNote />
@@ -69,11 +71,11 @@
 // export default App;
 
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import BrowserRouter, Routes, and Route
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter, Routes, and Route
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -85,9 +87,9 @@ import Location from "./components/Location";
 import Reservation from "./components/Reservation";
 import GetinTouch from "./components/GetinTouch";
 import DineinMenu from "./components/DineinMenu.jsx";
-import Success from "./components/Success.jsx";
 
 const App = () => {
+
   // AOS Init
   useEffect(() => {
     AOS.init({
@@ -104,85 +106,58 @@ const App = () => {
       <ScrollToTop />
       <div>
         <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Navbar />
-                <Home />
-                <Services />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/" element={
+            <>
+              <Navbar />
+              <Home />
+              <Services />
+              <Footer />
+            </>
+          } />
 
-          <Route
-            path="/reserve"
-            element={
-              <>
-                <Navbar />
-                <Reservation />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/reserve" element={
+            <>
+              <Navbar />
+              <Reservation />
+              <Footer />
+            </>
+          } />
 
-          <Route
-            path="/services"
-            element={
-              <>
-                <Navbar />
-                <Services />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/services" element={
+            <>
+              <Navbar />
+              <Services />
+              <Footer />
+            </>
+          } />
 
-          <Route
-            path="/about"
-            element={
-              <>
-                <Navbar />
-                <ChefsNote />
-                <Awards />
-                <WhyChooseUs />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/about" element={
+            <>
+              <Navbar />
+              <ChefsNote />
+              <Awards />
+              <WhyChooseUs />
+              <Footer />
+            </>
+          } />
 
-          <Route
-            path="/contact"
-            element={
-              <>
-                <Navbar />
-                <Location />
-                <GetinTouch />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/contact" element={
+            <>
+              <Navbar />
+              <Location/>
+              <GetinTouch />
+              <Footer />
+            </>
+          } />
 
-          <Route
-            path="/menu"
-            element={
-              <>
-                <Navbar />
-                <DineinMenu />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            path="/success"
-            element={
-              <>
-                <Navbar />
-                <Success />
-                <Footer />
-              </>
-            }
-          />
+          <Route path="/menu" element={
+            <>
+              <Navbar />
+              <DineinMenu/>
+              <Footer />
+            </>
+          } />
+
         </Routes>
       </div>
     </Router>

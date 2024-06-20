@@ -19,7 +19,7 @@ const Location = () => {
             Gomti Nagar, Lucknow - 226010
           </div>
             <br />
-            Open all days 11am to 10:45pm.
+            Open all days 11:00am to 10:45pm.
           </div>
         </div>
         <div className="w-full max-w-md lg:ml-8">
